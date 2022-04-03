@@ -1,13 +1,62 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Niconne&family=Nunito+Sans:wght@300;600;800&display=swap');
+*,
+*::before,
+*::after {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  background-image:url('./img/image1.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height:100vh;
+}
+h1{
+  text-align: center;
+  color: red;
+  margin:50px 0;
+  font-family: 'Niconne',cursive;
+  
+}
+.row {
+  margin: 0 -5px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+.card {
+  box-shadow: 5px 5px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  background-color: gainsboro;
+  height: 25vh;
+  margin: 0 10px;
+  border-radius:10px;
+}
+.card-title {
+  color: red;
+  margin-bottom: 50px;
+  font-family:'Niconne', cursive;
+  font-size: 20px;
+}
+.card-body {
+  overflow: hidden;
+  color:grey;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
