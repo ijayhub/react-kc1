@@ -48,6 +48,11 @@ h1{
 .card-body {
   overflow: hidden;
 }
+@media screen and (max-width:900px) {
+  .card-title{
+    font-size: 16px;
+  }
+}
 @media screen and (max-width:768px) {
   .card-title{
     font-size: 12px;
