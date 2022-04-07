@@ -604,13 +604,11 @@ const GiftCards = () => {
 		<>
 			<h1>List of GiftCards</h1>
 			<div className='row'>
-				{
-					allGiftCards.map(GiftCard => (
+				{allGiftCards.map((GiftCard) => (
 					<div className='column'>
-						<Card GiftCard={ GiftCard } />
+						<Card GiftCard={GiftCard} />
 					</div>
-					))
-				}
+				))}
 			</div>
 		</>
 	);

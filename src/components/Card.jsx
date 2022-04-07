@@ -8,8 +8,12 @@ const Card = ({ GiftCard }) => {
 				<div className='card-title'>
 					<h2>{GiftCard.title}</h2>
 				</div>
-				<div className='card-body'>
-					<p>{GiftCard.currencies.join(',')}</p>
+				<div className='card-body text-danger px-4'>
+					{GiftCard.currencies.map((currency =>
+						<button className='box' >{currency}</button>
+					))}
+						
+					
 				</div>
 			</div>
 		</div>
