@@ -36,7 +36,7 @@ h1{
   box-shadow: 5px 5px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 30px;
   background-color: gainsboro;
-  height: 55vh;
+  height: 45vh;
   margin: 0 10px;
   border-radius:10px;
   
@@ -63,13 +63,18 @@ h1{
   
 
 }
-@media screen and (max-width:900px) {
+@media screen and (min-width:900px) {
   .card-title{
     font-size: 16px;
   }
   .box{
     width:30px;
+    
 
+  }
+  .card{
+    overflow: hidden;
+    height: 70vh;
   }
 
 }
@@ -79,7 +84,7 @@ h1{
   }
   .card{
     
-    height: 100vh;
+    height: 70vh;
     overflow: hidden;
   }
   .box{
@@ -100,4 +105,5 @@ h1{
     height: 20px;
     
   }
+  
 }
